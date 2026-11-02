@@ -7,6 +7,8 @@ export const DATA_DIR = path.join(ROOT, 'public', 'data');
 
 export const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+const ORDINANCE_PATTERN = /\b(?:municipal|appropriation)\s+ordinance\s+no\.?/i;
+
 /** Loads content/documents.json (real export) or falls back to content/documents.sample.json */
 export function loadDocuments() {
   const real = path.join(CONTENT_DIR, 'documents.json');
@@ -26,15 +28,18 @@ export function loadDocuments() {
     }
     const year = Number(m[1]);
     const monthNumber = Number(m[2]);
+    const content = d.content || '';
     docs.push({
       ...d,
       created: `${m[1]}-${m[2]}-${m[3]}`,
       year,
       month_number: monthNumber,
       month: MONTHS[monthNumber - 1],
-      document_type: d.document_type || 'Other',
+      document_type: ORDINANCE_PATTERN.test(content)
+        ? 'Ordinance'
+        : d.document_type || 'Other',
       author: d.author || '',
-      content: d.content || '',
+      content,
     });
   }
   return { docs, isSample };

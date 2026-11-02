@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T05:03:48.241Z",
+  "generated_at": "2026-11-02T11:20:27.778Z",
   "stats": {
     "ordinances": 834,
     "resolutions": 10417,
@@ -7,25 +7,25 @@
   },
   "latest_updates": [
     {
-      "slug": "public-portal-launch-for-smart-sb-records",
-      "title": "Public Portal Launch for SMART-SB Records",
-      "excerpt": "The Sangguniang Bayan of Sta. Cruz shares the latest public update for citizens.",
-      "cover_photo": "/images/sample-updates-image.png",
+      "slug": "63rd-regular-session-sangguniang-bayan-santa-cruz",
+      "title": "63rd Regular Session of the Sangguniang Bayan of Santa Cruz",
+      "excerpt": "The 63rd Regular Session tackled key legislative matters on public health, barangay development, supplemental budgets, disaster preparedness, and local transportation services in Santa Cruz, Davao del Sur.",
+      "cover_photo": "/images/news/001.jpg",
       "date_published": "2026-10-28T08:00:00+08:00"
     },
     {
-      "slug": "regular-session-schedule-for-november",
-      "title": "Regular Session Schedule for November",
-      "excerpt": "The Sangguniang Bayan of Sta. Cruz shares the latest public update for citizens.",
-      "cover_photo": "/images/update-records.svg",
-      "date_published": "2026-10-23T08:00:00+08:00"
+      "slug": "62nd-regular-session-legislative-highlights",
+      "title": "62ND REGULAR SESSION | SANGGUNIANG BAYAN OF SANTA CRUZ",
+      "excerpt": "The Sangguniang Bayan of Santa Cruz tackled key legislative matters, including the Children’s Welfare Code, ₱210-million Supplemental Budget No. 4 for CY 2026, and priority development initiatives.",
+      "cover_photo": "/images/news/002.jpg",
+      "date_published": "2026-10-21T08:00:00+08:00"
     },
     {
-      "slug": "public-hearing-on-the-proposed-solid-waste-ordinance",
-      "title": "Public Hearing on the Proposed Solid Waste Ordinance",
-      "excerpt": "The Sangguniang Bayan of Sta. Cruz shares the latest public update for citizens.",
-      "cover_photo": "/images/sample-updates-image.png",
-      "date_published": "2026-10-18T08:00:00+08:00"
+      "slug": "scfrb-franchise-applications-transport-concerns",
+      "title": "SCFRB Deliberates on Franchise Applications and Transport Concerns",
+      "excerpt": "The Santa Cruz Franchising and Regulatory Board (SCFRB), presided over by Vice Mayor Atty. Charlotte Gallego, deliberates on franchise unit additions, dropping of units, and other transport concerns to promote a safer and more organized public transportation system.",
+      "cover_photo": "/images/news/002.jpg",
+      "date_published": "2026-10-20T08:00:00+08:00"
     }
   ]
 }

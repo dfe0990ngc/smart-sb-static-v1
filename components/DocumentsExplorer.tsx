@@ -315,7 +315,7 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
           </div>
 
           <label className="dx-sort">
-            <span>Sort</span>
+            {/* <span>Sort</span> */}
             <select value={sort} onChange={(e) => { setSort(e.target.value as SortMode); setPage(1); }}>
               <option value="relevance">{trimmed ? 'Best match' : 'Newest first (default)'}</option>
               <option value="newest">Newest first</option>
