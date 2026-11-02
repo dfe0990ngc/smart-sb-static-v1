@@ -39,7 +39,8 @@ class Paperless:
     def __init__(self, base_url: str, token: str):
         self.base = base_url.rstrip("/")
         self.s = requests.Session()
-        self.s.headers.update({"Authorization": f"Token {token}", "Accept": "application/json; version=5"})
+        # self.s.headers.update({"Authorization": f"Token {token}", "Accept": "application/json; version=5"})
+        self.s.headers.update({"Authorization": f"Token {token}", "Accept": "application/json"})
 
     def get(self, path: str, **params):
         r = self.s.get(f"{self.base}{path}", params=params, timeout=120)

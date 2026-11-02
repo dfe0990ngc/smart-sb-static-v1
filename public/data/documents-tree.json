@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T02:32:40.112Z",
-  "total": 11,
+  "generated_at": "2026-11-02T05:03:48.228Z",
+  "total": 11251,
   "types": [
     "Ordinance",
     "Resolution"
@@ -8,19 +8,592 @@
   "years": [
     {
       "year": 2026,
-      "count": 4,
+      "count": 215,
       "types": {
-        "Ordinance": 3,
-        "Resolution": 1
+        "Resolution": 209,
+        "Ordinance": 6
       },
       "months": [
         {
+          "month": "September",
+          "number": 9,
+          "count": 26,
+          "types": {
+            "Resolution": 26
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 28,
+          "types": {
+            "Resolution": 28
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 26,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 25,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 7,
+          "types": {
+            "Resolution": 7
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 36,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 35
+          }
+        },
+        {
           "month": "March",
           "number": 3,
-          "count": 3,
+          "count": 20,
           "types": {
-            "Ordinance": 2,
-            "Resolution": 1
+            "Resolution": 20
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 29,
+          "types": {
+            "Resolution": 26,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 18,
+          "types": {
+            "Resolution": 18
+          }
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "count": 311,
+      "types": {
+        "Resolution": 294,
+        "Ordinance": 17
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 26,
+          "types": {
+            "Resolution": 23,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 10,
+          "types": {
+            "Resolution": 9,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 46,
+          "types": {
+            "Resolution": 46
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 10,
+          "types": {
+            "Resolution": 6,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 75,
+          "types": {
+            "Resolution": 72,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 32,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 39,
+          "types": {
+            "Resolution": 39
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 29,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 26,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "count": 270,
+      "types": {
+        "Ordinance": 20,
+        "Resolution": 250
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 32,
+          "types": {
+            "Ordinance": 6,
+            "Resolution": 26
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 14,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 36,
+          "types": {
+            "Resolution": 33,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 20,
+          "types": {
+            "Resolution": 17,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 32,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 21,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 13,
+          "types": {
+            "Resolution": 11,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 35,
+          "types": {
+            "Resolution": 34,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 14,
+          "types": {
+            "Resolution": 14
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 31,
+          "types": {
+            "Resolution": 31
+          }
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "count": 320,
+      "types": {
+        "Resolution": 304,
+        "Ordinance": 16
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 35,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 8
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 16,
+          "types": {
+            "Resolution": 15,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 33,
+          "types": {
+            "Resolution": 32,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 12,
+          "types": {
+            "Resolution": 10,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 39,
+          "types": {
+            "Resolution": 37,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 26,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 33,
+          "types": {
+            "Resolution": 33
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 47,
+          "types": {
+            "Resolution": 47
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 18,
+          "types": {
+            "Resolution": 18
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 49,
+          "types": {
+            "Resolution": 48,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 12,
+          "types": {
+            "Resolution": 12
+          }
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "count": 372,
+      "types": {
+        "Resolution": 352,
+        "Ordinance": 20
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 43,
+          "types": {
+            "Resolution": 35,
+            "Ordinance": 8
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 24,
+          "types": {
+            "Resolution": 22,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 104,
+          "types": {
+            "Resolution": 102,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 77,
+          "types": {
+            "Resolution": 72,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 12,
+          "types": {
+            "Resolution": 12
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 23,
+          "types": {
+            "Resolution": 23
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 44,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 43
+          }
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "count": 232,
+      "types": {
+        "Resolution": 220,
+        "Ordinance": 12
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 32,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 7
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 17,
+          "types": {
+            "Resolution": 17
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 8,
+          "types": {
+            "Resolution": 7,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 21,
+          "types": {
+            "Resolution": 19,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 19,
+          "types": {
+            "Resolution": 17,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 35,
+          "types": {
+            "Resolution": 35
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 40,
+          "types": {
+            "Resolution": 40
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 59,
+          "types": {
+            "Resolution": 59
           }
         },
         {
@@ -28,26 +601,3936 @@
           "number": 1,
           "count": 1,
           "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "count": 479,
+      "types": {
+        "Ordinance": 18,
+        "Resolution": 461
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 63,
+          "types": {
+            "Ordinance": 4,
+            "Resolution": 59
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 67,
+          "types": {
+            "Resolution": 65,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 7,
+          "types": {
+            "Resolution": 7
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 40,
+          "types": {
+            "Resolution": 40
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 32,
+          "types": {
+            "Resolution": 32
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 42,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 40
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 40,
+          "types": {
+            "Ordinance": 3,
+            "Resolution": 37
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 21,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 19
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 42,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 40
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 98,
+          "types": {
+            "Resolution": 95,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 25,
+          "types": {
+            "Resolution": 25
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 2,
+          "types": {
+            "Resolution": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "count": 224,
+      "types": {
+        "Resolution": 214,
+        "Ordinance": 10
+      },
+      "months": [
+        {
+          "month": "October",
+          "number": 10,
+          "count": 33,
+          "types": {
+            "Resolution": 32,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 32,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 44,
+          "types": {
+            "Resolution": 43,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 12,
+          "types": {
+            "Resolution": 10,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 50,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 49
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 2,
+          "types": {
+            "Resolution": 2
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 2,
+          "types": {
+            "Resolution": 2
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 19,
+          "types": {
+            "Resolution": 19
+          }
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "count": 379,
+      "types": {
+        "Resolution": 369,
+        "Ordinance": 10
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 21,
+          "types": {
+            "Resolution": 21
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 31,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 34,
+          "types": {
+            "Resolution": 34
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 36,
+          "types": {
+            "Resolution": 35,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 46,
+          "types": {
+            "Resolution": 45,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 27,
+          "types": {
+            "Ordinance": 3,
+            "Resolution": 24
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 61,
+          "types": {
+            "Resolution": 61
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 5,
+          "types": {
+            "Resolution": 4,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 15,
+          "types": {
+            "Resolution": 15
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 33,
+          "types": {
+            "Resolution": 32,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 52,
+          "types": {
+            "Resolution": 52
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 18,
+          "types": {
+            "Resolution": 17,
             "Ordinance": 1
           }
         }
       ]
     },
     {
-      "year": 2025,
-      "count": 4,
+      "year": 2017,
+      "count": 352,
       "types": {
-        "Resolution": 2,
-        "Ordinance": 2
+        "Ordinance": 8,
+        "Resolution": 344
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 31,
+          "types": {
+            "Ordinance": 4,
+            "Resolution": 27
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 20,
+          "types": {
+            "Resolution": 20
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 17,
+          "types": {
+            "Resolution": 17
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 25,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 51,
+          "types": {
+            "Resolution": 51
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 22,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 55,
+          "types": {
+            "Resolution": 54,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 23,
+          "types": {
+            "Resolution": 23
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 19,
+          "types": {
+            "Resolution": 19
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 31,
+          "types": {
+            "Resolution": 31
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 29,
+          "types": {
+            "Resolution": 29
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 29,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "count": 359,
+      "types": {
+        "Resolution": 344,
+        "Ordinance": 15
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 50,
+          "types": {
+            "Resolution": 48,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 30,
+          "types": {
+            "Resolution": 30
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 34,
+          "types": {
+            "Resolution": 34
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 43,
+          "types": {
+            "Resolution": 41,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 68,
+          "types": {
+            "Resolution": 68
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 10,
+          "types": {
+            "Resolution": 9,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 35,
+          "types": {
+            "Resolution": 31,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 3,
+          "types": {
+            "Resolution": 3
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 18,
+          "types": {
+            "Resolution": 18
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 26,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 32,
+          "types": {
+            "Ordinance": 3,
+            "Resolution": 29
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 10,
+          "types": {
+            "Resolution": 8,
+            "Ordinance": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "count": 395,
+      "types": {
+        "Resolution": 376,
+        "Ordinance": 19
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 21,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 26,
+          "types": {
+            "Resolution": 23,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 49,
+          "types": {
+            "Resolution": 47,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 52,
+          "types": {
+            "Resolution": 50,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 62,
+          "types": {
+            "Resolution": 60,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 26,
+          "types": {
+            "Resolution": 26
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 31,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 25,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 24,
+          "types": {
+            "Resolution": 24
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 24,
+          "types": {
+            "Resolution": 24
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 18,
+          "types": {
+            "Resolution": 18
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 37,
+          "types": {
+            "Resolution": 36,
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "count": 359,
+      "types": {
+        "Resolution": 320,
+        "Ordinance": 39
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 30,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 10
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 37,
+          "types": {
+            "Resolution": 32,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 39,
+          "types": {
+            "Resolution": 36,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 38,
+          "types": {
+            "Resolution": 35,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 20,
+          "types": {
+            "Resolution": 19,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 30,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 33,
+          "types": {
+            "Resolution": 30,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 19,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 17
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 26,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 38,
+          "types": {
+            "Resolution": 32,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 38,
+          "types": {
+            "Resolution": 37,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 11,
+          "types": {
+            "Resolution": 10,
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "count": 216,
+      "types": {
+        "Resolution": 195,
+        "Ordinance": 21
       },
       "months": [
         {
           "month": "November",
           "number": 11,
+          "count": 15,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 23,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 22
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 34,
+          "types": {
+            "Resolution": 31,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 37,
+          "types": {
+            "Resolution": 35,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 3,
+          "types": {
+            "Resolution": 3
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 9,
+          "types": {
+            "Resolution": 8,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 32,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 7
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 44,
+          "types": {
+            "Resolution": 39,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "count": 356,
+      "types": {
+        "Ordinance": 14,
+        "Resolution": 342
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 33,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 32
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 31,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 21,
+          "types": {
+            "Resolution": 21
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 31,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 26,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 15,
+          "types": {
+            "Resolution": 14,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 21,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 37,
+          "types": {
+            "Resolution": 37
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 16,
+          "types": {
+            "Resolution": 16
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 29,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 83,
+          "types": {
+            "Resolution": 80,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 13,
+          "types": {
+            "Resolution": 13
+          }
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "count": 310,
+      "types": {
+        "Ordinance": 26,
+        "Resolution": 284
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 43,
+          "types": {
+            "Ordinance": 4,
+            "Resolution": 39
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 27,
+          "types": {
+            "Resolution": 26,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 15,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 16,
+          "types": {
+            "Resolution": 14,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 31,
+          "types": {
+            "Ordinance": 6,
+            "Resolution": 25
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 42,
+          "types": {
+            "Resolution": 40,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 15,
+          "types": {
+            "Resolution": 15
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 27,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 25
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 26,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 24
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 28,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "count": 353,
+      "types": {
+        "Resolution": 333,
+        "Ordinance": 20
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 65,
+          "types": {
+            "Resolution": 62,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 34,
+          "types": {
+            "Resolution": 34
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 23,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 51,
+          "types": {
+            "Ordinance": 7,
+            "Resolution": 44
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 54,
+          "types": {
+            "Resolution": 51,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 35,
+          "types": {
+            "Resolution": 35
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 30,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 32,
+          "types": {
+            "Resolution": 31,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 22,
+          "types": {
+            "Resolution": 22
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "count": 250,
+      "types": {
+        "Resolution": 233,
+        "Ordinance": 17
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 24,
+          "types": {
+            "Resolution": 24
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 16,
+          "types": {
+            "Resolution": 14,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 19,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 25,
+          "types": {
+            "Resolution": 25
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 23,
+          "types": {
+            "Ordinance": 5,
+            "Resolution": 18
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 7,
+          "types": {
+            "Resolution": 5,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 13,
+          "types": {
+            "Resolution": 12,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 29,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 29,
+          "types": {
+            "Resolution": 29
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 34,
+          "types": {
+            "Resolution": 32,
+            "Ordinance": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "count": 217,
+      "types": {
+        "Resolution": 209,
+        "Ordinance": 8
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 18,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 17,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 25,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 9,
+          "types": {
+            "Resolution": 9
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 13,
+          "types": {
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 19,
+          "types": {
+            "Resolution": 19
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 16,
+          "types": {
+            "Resolution": 16
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 7,
+          "types": {
+            "Resolution": 6,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 31,
+          "types": {
+            "Resolution": 31
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 25,
+          "types": {
+            "Resolution": 25
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 27,
+          "types": {
+            "Resolution": 27
+          }
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "count": 255,
+      "types": {
+        "Resolution": 245,
+        "Ordinance": 10
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 29,
+          "types": {
+            "Resolution": 26,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 20,
+          "types": {
+            "Resolution": 20
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 26,
+          "types": {
+            "Resolution": 26
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 28,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 27
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 33,
+          "types": {
+            "Resolution": 33
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 21,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 15,
+          "types": {
+            "Resolution": 15
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 27,
+          "types": {
+            "Resolution": 26,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 36,
+          "types": {
+            "Resolution": 36
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 9,
+          "types": {
+            "Resolution": 7,
+            "Ordinance": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "count": 307,
+      "types": {
+        "Resolution": 297,
+        "Ordinance": 10
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 34,
+          "types": {
+            "Resolution": 33,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 13,
+          "types": {
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 31,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 29,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 40,
+          "types": {
+            "Resolution": 40
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 22,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 27,
+          "types": {
+            "Resolution": 27
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 17,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 18,
+          "types": {
+            "Resolution": 18
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 23,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 43,
+          "types": {
+            "Resolution": 43
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "count": 303,
+      "types": {
+        "Ordinance": 16,
+        "Resolution": 287
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 23,
+          "types": {
+            "Ordinance": 3,
+            "Resolution": 20
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 30,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 24,
+          "types": {
+            "Resolution": 24
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 21,
+          "types": {
+            "Resolution": 21
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 35,
+          "types": {
+            "Resolution": 33,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 21,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 27,
+          "types": {
+            "Resolution": 26,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 27,
+          "types": {
+            "Resolution": 27
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 31,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 32,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 21,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "count": 321,
+      "types": {
+        "Resolution": 304,
+        "Ordinance": 17
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 22,
+          "types": {
+            "Resolution": 22
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 25,
+          "types": {
+            "Ordinance": 5,
+            "Resolution": 20
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 46,
+          "types": {
+            "Resolution": 45,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 33,
+          "types": {
+            "Resolution": 31,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 21,
+          "types": {
+            "Ordinance": 3,
+            "Resolution": 18
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 18,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 12,
+          "types": {
+            "Resolution": 12
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 17,
+          "types": {
+            "Resolution": 17
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 56,
+          "types": {
+            "Resolution": 55,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 34,
+          "types": {
+            "Resolution": 33,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 17,
+          "types": {
+            "Resolution": 17
+          }
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "count": 324,
+      "types": {
+        "Ordinance": 33,
+        "Resolution": 291
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 50,
+          "types": {
+            "Ordinance": 10,
+            "Resolution": 40
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 9,
+          "types": {
+            "Resolution": 9
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 31,
+          "types": {
+            "Resolution": 30,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 15,
+          "types": {
+            "Resolution": 15
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 34,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 33,
+          "types": {
+            "Resolution": 30,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 20,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 31,
+          "types": {
+            "Resolution": 30,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 31,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 24,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 33,
+          "types": {
+            "Resolution": 32,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 13,
+          "types": {
+            "Resolution": 13
+          }
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "count": 344,
+      "types": {
+        "Resolution": 299,
+        "Ordinance": 45
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 37,
+          "types": {
+            "Resolution": 34,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 17,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 24,
+          "types": {
+            "Resolution": 19,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 18,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 25,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 26,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 26,
+          "types": {
+            "Resolution": 26
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 32,
+          "types": {
+            "Resolution": 23,
+            "Ordinance": 9
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 36,
+          "types": {
+            "Resolution": 33,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 22,
+          "types": {
+            "Resolution": 19,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 36,
+          "types": {
+            "Ordinance": 3,
+            "Resolution": 33
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 45,
+          "types": {
+            "Resolution": 37,
+            "Ordinance": 8
+          }
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "count": 262,
+      "types": {
+        "Resolution": 230,
+        "Ordinance": 32
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 32,
+          "types": {
+            "Resolution": 30,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 26,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 42,
+          "types": {
+            "Resolution": 38,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 13,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 14,
+          "types": {
+            "Resolution": 14
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 5,
+          "types": {
+            "Resolution": 5
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 14,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 9,
+          "types": {
+            "Resolution": 9
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 22,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 39,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 11
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 25,
+          "types": {
+            "Resolution": 22,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 21,
+          "types": {
+            "Resolution": 15,
+            "Ordinance": 6
+          }
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "count": 250,
+      "types": {
+        "Resolution": 209,
+        "Ordinance": 41
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 27,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 19,
+          "types": {
+            "Resolution": 19
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 13,
+          "types": {
+            "Resolution": 12,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 20,
+          "types": {
+            "Resolution": 17,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 10,
+          "types": {
+            "Resolution": 8,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 27,
+          "types": {
+            "Ordinance": 5,
+            "Resolution": 22
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 29,
+          "types": {
+            "Ordinance": 16,
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 27,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 15,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 18,
+          "types": {
+            "Resolution": 17,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 25,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "count": 300,
+      "types": {
+        "Resolution": 280,
+        "Ordinance": 20
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 17,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 23,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 12,
+          "types": {
+            "Resolution": 11,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 23,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 22
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 39,
+          "types": {
+            "Resolution": 37,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 30,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 31,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 16,
+          "types": {
+            "Ordinance": 4,
+            "Resolution": 12
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 13,
+          "types": {
+            "Resolution": 12,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 47,
+          "types": {
+            "Resolution": 44,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 37,
+          "types": {
+            "Resolution": 35,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 12,
+          "types": {
+            "Resolution": 12
+          }
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "count": 234,
+      "types": {
+        "Resolution": 211,
+        "Ordinance": 23
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 31,
+          "types": {
+            "Resolution": 30,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 22,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 13,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 17,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 28,
+          "types": {
+            "Resolution": 23,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 18,
+          "types": {
+            "Resolution": 12,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 18,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 10,
+          "types": {
+            "Resolution": 9,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 7,
+          "types": {
+            "Resolution": 7
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 28,
+          "types": {
+            "Resolution": 28
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 22,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 20,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "count": 265,
+      "types": {
+        "Resolution": 235,
+        "Ordinance": 30
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 18,
+          "types": {
+            "Resolution": 17,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 25,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 21,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 32,
+          "types": {
+            "Resolution": 32
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 19,
+          "types": {
+            "Resolution": 14,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 13,
+          "types": {
+            "Resolution": 6,
+            "Ordinance": 7
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 14,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 12
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 19,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 21,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 29,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 33,
+          "types": {
+            "Resolution": 30,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 21,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 3
+          }
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "count": 297,
+      "types": {
+        "Resolution": 245,
+        "Ordinance": 52
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 21,
+          "types": {
+            "Resolution": 21
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 14,
+          "types": {
+            "Resolution": 12,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 22,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 29,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 25,
+          "types": {
+            "Resolution": 23,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 35,
+          "types": {
+            "Resolution": 33,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 18,
+          "types": {
+            "Ordinance": 6,
+            "Resolution": 12
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 39,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 11
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 36,
+          "types": {
+            "Resolution": 24,
+            "Ordinance": 12
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 18,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 34,
+          "types": {
+            "Ordinance": 6,
+            "Resolution": 28
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "count": 397,
+      "types": {
+        "Resolution": 360,
+        "Ordinance": 37
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 25,
+          "types": {
+            "Resolution": 22,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 22,
+          "types": {
+            "Ordinance": 6,
+            "Resolution": 16
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 50,
+          "types": {
+            "Resolution": 44,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 31,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 61,
+          "types": {
+            "Resolution": 55,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 29,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 21,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 14,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 28,
+          "types": {
+            "Resolution": 25,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 46,
+          "types": {
+            "Ordinance": 5,
+            "Resolution": 41
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 51,
+          "types": {
+            "Resolution": 49,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 19,
+          "types": {
+            "Resolution": 19
+          }
+        }
+      ]
+    },
+    {
+      "year": 1994,
+      "count": 268,
+      "types": {
+        "Resolution": 228,
+        "Ordinance": 40
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 39,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 10
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 18,
+          "types": {
+            "Ordinance": 5,
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 17,
+          "types": {
+            "Resolution": 17
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 33,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 20,
+          "types": {
+            "Resolution": 17,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 18,
+          "types": {
+            "Resolution": 14,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 25,
+          "types": {
+            "Resolution": 22,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 17,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 24,
+          "types": {
+            "Resolution": 23,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 14,
+          "types": {
+            "Resolution": 13,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 22,
+          "types": {
+            "Resolution": 21,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 21,
+          "types": {
+            "Resolution": 18,
+            "Ordinance": 3
+          }
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "count": 376,
+      "types": {
+        "Resolution": 339,
+        "Ordinance": 37
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 35,
+          "types": {
+            "Resolution": 28,
+            "Ordinance": 7
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 29,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 19,
+          "types": {
+            "Resolution": 16,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 29,
+          "types": {
+            "Resolution": 27,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 42,
+          "types": {
+            "Resolution": 39,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 30,
+          "types": {
+            "Ordinance": 3,
+            "Resolution": 27
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 38,
+          "types": {
+            "Resolution": 36,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 20,
+          "types": {
+            "Resolution": 19,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 32,
+          "types": {
+            "Resolution": 29,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 38,
+          "types": {
+            "Ordinance": 4,
+            "Resolution": 34
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 43,
+          "types": {
+            "Resolution": 38,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 21,
+          "types": {
+            "Resolution": 19,
+            "Ordinance": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "count": 192,
+      "types": {
+        "Ordinance": 45,
+        "Resolution": 147
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 27,
+          "types": {
+            "Ordinance": 8,
+            "Resolution": 19
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 32,
+          "types": {
+            "Ordinance": 6,
+            "Resolution": 26
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 32,
+          "types": {
+            "Resolution": 32
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 17,
+          "types": {
+            "Resolution": 12,
+            "Ordinance": 5
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 26,
+          "types": {
+            "Resolution": 20,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 14,
+          "types": {
+            "Resolution": 11,
+            "Ordinance": 3
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 14,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 12
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
           "count": 2,
           "types": {
-            "Resolution": 1,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 4,
+          "types": {
+            "Ordinance": 4
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 11,
+          "types": {
+            "Resolution": 5,
+            "Ordinance": 6
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 9,
+          "types": {
+            "Resolution": 7,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 4,
+          "types": {
+            "Resolution": 3,
             "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "count": 94,
+      "types": {
+        "Resolution": 88,
+        "Ordinance": 6
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 4,
+          "types": {
+            "Resolution": 4
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 4,
+          "types": {
+            "Resolution": 4
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 4,
+          "types": {
+            "Resolution": 3,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 12,
+          "types": {
+            "Resolution": 11,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 10,
+          "types": {
+            "Resolution": 9,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 7,
+          "types": {
+            "Resolution": 7
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 12,
+          "types": {
+            "Resolution": 11,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 14,
+          "types": {
+            "Resolution": 12,
+            "Ordinance": 2
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 7,
+          "types": {
+            "Resolution": 7
+          }
+        }
+      ]
+    },
+    {
+      "year": 1990,
+      "count": 126,
+      "types": {
+        "Resolution": 110,
+        "Ordinance": 16
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 7,
+          "types": {
+            "Resolution": 7
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 12,
+          "types": {
+            "Ordinance": 6,
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 12,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 9,
+          "types": {
+            "Resolution": 9
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 5,
+          "types": {
+            "Resolution": 5
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 17,
+          "types": {
+            "Ordinance": 4,
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 13,
+          "types": {
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 20,
+          "types": {
+            "Ordinance": 4,
+            "Resolution": 16
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 6,
+          "types": {
+            "Resolution": 5,
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1989,
+      "count": 116,
+      "types": {
+        "Resolution": 116
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 7,
+          "types": {
+            "Resolution": 7
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 18,
+          "types": {
+            "Resolution": 18
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 14,
+          "types": {
+            "Resolution": 14
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 5,
+          "types": {
+            "Resolution": 5
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 14,
+          "types": {
+            "Resolution": 14
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        }
+      ]
+    },
+    {
+      "year": 1988,
+      "count": 134,
+      "types": {
+        "Resolution": 128,
+        "Ordinance": 6
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 5,
+          "types": {
+            "Resolution": 4,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 3,
+          "types": {
+            "Resolution": 3
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 9,
+          "types": {
+            "Ordinance": 2,
+            "Resolution": 7
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 11,
+          "types": {
+            "Resolution": 10,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 18,
+          "types": {
+            "Resolution": 17,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 24,
+          "types": {
+            "Resolution": 24
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 16,
+          "types": {
+            "Resolution": 15,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 15,
+          "types": {
+            "Resolution": 15
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 11,
+          "types": {
+            "Resolution": 11
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 13,
+          "types": {
+            "Resolution": 13
+          }
+        }
+      ]
+    },
+    {
+      "year": 1987,
+      "count": 93,
+      "types": {
+        "Resolution": 91,
+        "Ordinance": 2
+      },
+      "months": [
+        {
+          "month": "December",
+          "number": 12,
+          "count": 4,
+          "types": {
+            "Resolution": 4
+          }
+        },
+        {
+          "month": "November",
+          "number": 11,
+          "count": 5,
+          "types": {
+            "Resolution": 4,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "October",
+          "number": 10,
+          "count": 12,
+          "types": {
+            "Resolution": 12
+          }
+        },
+        {
+          "month": "September",
+          "number": 9,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 13,
+          "types": {
+            "Resolution": 13
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 3,
+          "types": {
+            "Resolution": 3
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 11,
+          "types": {
+            "Resolution": 10,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "May",
+          "number": 5,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 10,
+          "types": {
+            "Resolution": 10
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
+          "count": 9,
+          "types": {
+            "Resolution": 9
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 8,
+          "types": {
+            "Resolution": 8
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 6,
+          "types": {
+            "Resolution": 6
+          }
+        }
+      ]
+    },
+    {
+      "year": 1986,
+      "count": 3,
+      "types": {
+        "Resolution": 3
+      },
+      "months": [
+        {
+          "month": "September",
+          "number": 9,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 2,
+          "types": {
+            "Resolution": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 1985,
+      "count": 1,
+      "types": {
+        "Resolution": 1
+      },
+      "months": [
+        {
+          "month": "January",
+          "number": 1,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1970,
+      "count": 2,
+      "types": {
+        "Resolution": 2
+      },
+      "months": [
+        {
+          "month": "January",
+          "number": 1,
+          "count": 2,
+          "types": {
+            "Resolution": 2
+          }
+        }
+      ]
+    },
+    {
+      "year": 1969,
+      "count": 2,
+      "types": {
+        "Resolution": 2
+      },
+      "months": [
+        {
+          "month": "July",
+          "number": 7,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1967,
+      "count": 8,
+      "types": {
+        "Resolution": 8
+      },
+      "months": [
+        {
+          "month": "September",
+          "number": 9,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "July",
+          "number": 7,
+          "count": 2,
+          "types": {
+            "Resolution": 2
           }
         },
         {
@@ -59,35 +4542,126 @@
           }
         },
         {
-          "month": "February",
-          "number": 2,
+          "month": "April",
+          "number": 4,
+          "count": 3,
+          "types": {
+            "Resolution": 3
+          }
+        },
+        {
+          "month": "March",
+          "number": 3,
           "count": 1,
           "types": {
-            "Ordinance": 1
+            "Resolution": 1
           }
         }
       ]
     },
     {
-      "year": 2024,
-      "count": 3,
+      "year": 1966,
+      "count": 2,
       "types": {
-        "Resolution": 2,
-        "Ordinance": 1
+        "Resolution": 2
+      },
+      "months": [
+        {
+          "month": "October",
+          "number": 10,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "August",
+          "number": 8,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1960,
+      "count": 1,
+      "types": {
+        "Resolution": 1
       },
       "months": [
         {
           "month": "September",
           "number": 9,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1908,
+      "count": 1,
+      "types": {
+        "Resolution": 1
+      },
+      "months": [
+        {
+          "month": "July",
+          "number": 7,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1907,
+      "count": 2,
+      "types": {
+        "Resolution": 2
+      },
+      "months": [
+        {
+          "month": "January",
+          "number": 1,
           "count": 2,
           "types": {
-            "Resolution": 1,
-            "Ordinance": 1
+            "Resolution": 2
           }
-        },
+        }
+      ]
+    },
+    {
+      "year": 1906,
+      "count": 1,
+      "types": {
+        "Resolution": 1
+      },
+      "months": [
         {
-          "month": "April",
-          "number": 4,
+          "month": "January",
+          "number": 1,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 1900,
+      "count": 1,
+      "types": {
+        "Resolution": 1
+      },
+      "months": [
+        {
+          "month": "February",
+          "number": 2,
           "count": 1,
           "types": {
             "Resolution": 1
