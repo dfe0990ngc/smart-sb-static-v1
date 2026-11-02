@@ -1,74 +1,93 @@
 {
-  "updated_at": "2026-11-02",
+  "updated_at": "2026-11-02T14:44:00Z",
   "group_photo": "/images/sb-group.webp",
   "secretariat_group_photo": "/images/secretariat-group.webp",
   "members": [
     {
-      "name": "Hon. Marissa V. Aquino",
-      "position": "Municipal Vice Mayor / Presiding Officer",
-      "photo": "/images/profiles/member-1.svg",
+      "name": "Hon. Jose Nelson Z. Sala, Sr.",
+      "position": "Municipal Mayor",
+      "photo": "/images/profiles/mayor.webp",
       "sort": 1,
       "featured": true
     },
     {
-      "name": "Hon. Daniel R. Reyes",
-      "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-1.svg",
-      "sort": 10
+      "name": "Hon. Atty. Charlotte F. Gallego",
+      "position": "Municipal Vice Mayor",
+      "photo": "/images/profiles/vice-mayor.webp",
+      "sort": 10,
+      "featured": true
     },
     {
-      "name": "Hon. Elena M. Cruz",
+      "name": "Hon. Apolinar C. Ugdoracion, Jr.",
       "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-2.svg",
+      "photo": "/images/profiles/councilor-1.webp",
       "sort": 20
     },
     {
-      "name": "Hon. Paolo S. Rivera",
+      "name": "Hon. Atty. Sharmaine Fe L. Mole",
       "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-3.svg",
+      "photo": "/images/profiles/councilor-2.webp",
       "sort": 30
     },
     {
-      "name": "Hon. Josefina L. Tan",
+      "name": "Hon. Roche S. Cabanda",
       "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-4.svg",
+      "photo": "/images/profiles/councilor-3.webp",
       "sort": 40
     },
     {
-      "name": "Hon. Ramon B. Dela Cruz",
+      "name": "Hon. Anselmo A. Datu",
       "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-5.svg",
+      "photo": "/images/profiles/councilor-4.webp",
       "sort": 50
     },
     {
-      "name": "Hon. Teresita G. Lim",
+      "name": "Hon. Alvin Rey C. Almendras",
       "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-6.svg",
+      "photo": "/images/profiles/councilor-5.webp",
       "sort": 60
     },
     {
-      "name": "Hon. Alfredo C. Mendoza",
+      "name": "Hon. Atty. Julius Frencie M. Rizada",
       "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-7.svg",
+      "photo": "/images/profiles/councilor-6.webp",
       "sort": 70
     },
     {
-      "name": "Hon. Corazon P. Villanueva",
+      "name": "Hon. Manolito R. Lagrada, Jr.",
       "position": "Municipal Councilor",
-      "photo": "/images/profiles/member-8.svg",
+      "photo": "/images/profiles/councilor-7.webp",
       "sort": 80
     },
     {
-      "name": "Hon. Paolo S. Rivera Jr.",
-      "position": "Liga ng mga Barangay President",
-      "photo": "/images/profiles/exofficio-1.svg",
+      "name": "Hon. Atty. Michelle O. Orpilla",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/councilor-8.webp",
       "sort": 100
     },
     {
-      "name": "Hon. Anna Marie Dizon",
-      "position": "SK Federation President",
-      "photo": "/images/profiles/exofficio-2.svg",
+      "name": "Hon. Danilo A. Baquial",
+      "position": "LNB PRESIDENT",
+      "photo": "/images/profiles/lnb-president.webp",
       "sort": 110
+    },
+    {
+      "name": "Hon. Kristeen Pearl D. Cahiles",
+      "position": "SKMF PRESIDENT",
+      "photo": "/images/profiles/skmf-president.webp",
+      "sort": 120
+    },
+    {
+      "name": "Hon. Elvira I. Lim",
+      "position": "IMPR",
+      "photo": "/images/profiles/ipmr.webp",
+      "sort": 130
+    },
+    {
+      "name": "Mr. Michael Ryan D. Bajo",
+      "position": "SB SECRETARY",
+      "photo": "/images/profiles/sb-secretary.webp",
+      "sort": 140
     }
   ]
 }
