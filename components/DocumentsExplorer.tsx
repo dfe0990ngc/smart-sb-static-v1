@@ -2,14 +2,47 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { loadPagefind, safeExcerpt } from '../lib/pagefind';
-import type { PagefindDoc, PagefindOptions } from '../lib/pagefind';
+import type { PagefindDoc, PagefindOptions, PagefindResult } from '../lib/pagefind';
 import type { FolderTree, YearFolder } from '../lib/types';
 
 const PAGE_SIZE = 15;
 
 type SortMode = 'relevance' | 'newest' | 'oldest';
 type Folder = { year?: number; month?: string };
-type Row = { id: string; doc: PagefindDoc };
+type Meta = { title: string; author: string; created: string; year: string; month: string; type: string; file: string };
+type Row = { id: string; meta: Meta; excerpt?: string };
+type BrowseRecord = { id: number; title: string; author: string; created: string; month: string; type: string; url: string };
+
+/* ───────── on-demand data caches ───────── */
+
+// Browse mode (no search text): one small metadata file per year, fetched only when that page needs it.
+const yearCache = new Map<number, Promise<BrowseRecord[]>>();
+function loadYear(year: number): Promise<BrowseRecord[]> {
+  let p = yearCache.get(year);
+  if (!p) {
+    p = fetch(`/data/docs/${year}.json`).then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+    p.catch(() => yearCache.delete(year));
+    yearCache.set(year, p);
+  }
+  return p;
+}
+
+// Search mode: Pagefind result fragments (contain the OCR text, so they are fetched per page, then cached).
+const fragmentCache = new Map<string, Promise<PagefindDoc>>();
+function loadFragment(r: PagefindResult): Promise<PagefindDoc> {
+  let p = fragmentCache.get(r.id);
+  if (!p) {
+    p = r.data();
+    p.catch(() => fragmentCache.delete(r.id));
+    fragmentCache.set(r.id, p);
+  }
+  return p;
+}
+
+const toRow = (id: string, doc: PagefindDoc): Row => ({ id, meta: doc.meta as unknown as Meta, excerpt: doc.excerpt });
 
 /* ───────── small helpers ───────── */
 
@@ -81,6 +114,7 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
   const [panelOpen, setPanelOpen] = useState(false); // mobile
   const requestId = useRef(0);
+  const searchCache = useRef<{ key: string; results: PagefindResult[]; years: Record<string, number>; months: Record<string, number> } | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsTop = useRef<HTMLDivElement>(null);
 
@@ -119,41 +153,106 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
     window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname);
   }, [hydrated, trimmed, folder, type, sort, page]);
 
-  /* ── run the Pagefind search (scoped by the selected folder) ── */
+  /* ── load records: instant browse from per-year JSON, or Pagefind when there is a query ── */
   useEffect(() => {
     if (!hydrated) return;
     const id = ++requestId.current;
     let cancelled = false;
+    const stale = () => cancelled || id !== requestId.current;
 
-    const filters: Record<string, string> = {};
-    if (folder.year) filters.year = String(folder.year);
-    if (folder.month) filters.month = folder.month;
-    if (type !== 'All') filters.type = type;
+    const start = (page - 1) * PAGE_SIZE;
+    const end = start + PAGE_SIZE;
 
-    const options: PagefindOptions = { filters };
-    if (effectiveSort !== 'relevance') options.sort = { created: effectiveSort === 'oldest' ? 'asc' : 'desc' };
+    /* browse mode – counts come from the folder tree, only the needed year file(s) are fetched */
+    const folderCount = (y: YearFolder) => {
+      if (folder.year && y.year !== folder.year) return 0;
+      if (folder.month) {
+        const m = y.months.find((mm) => mm.month === folder.month);
+        return m ? countFor(m, type) : 0;
+      }
+      return countFor(y, type);
+    };
+    const years = effectiveSort === 'oldest' ? [...tree.years].reverse() : tree.years;
+
+    const browsePage = async (from: number, to: number): Promise<Row[]> => {
+      const parts: Promise<BrowseRecord[]>[] = [];
+      let offset = 0;
+      for (const y of years) {
+        const c = folderCount(y);
+        if (!c) continue;
+        const ys = offset;
+        offset += c;
+        if (offset <= from) continue;
+        if (ys >= to) break;
+        parts.push(
+          loadYear(y.year).then((recs) => {
+            let list = recs.filter((r) => (!folder.month || r.month === folder.month) && (type === 'All' || r.type === type));
+            if (effectiveSort === 'oldest') list = list.reverse();
+            return list.slice(Math.max(0, from - ys), to - ys).map((r) => ({ ...r, __year: y.year }));
+          })
+        );
+      }
+      const flat = (await Promise.all(parts)).flat() as (BrowseRecord & { __year: number })[];
+      return flat.map((r) => ({
+        id: String(r.id),
+        meta: { title: r.title, author: r.author, created: r.created, year: String(r.__year), month: r.month, type: r.type, file: r.url },
+      }));
+    };
 
     setStatus('loading');
 
     (async () => {
       try {
-        const pf = await loadPagefind();
-        const response = trimmed
-          ? await pf.debouncedSearch(trimmed, options, 250)
-          : await pf.search(null, options);
-        if (cancelled || id !== requestId.current || !response) return; // superseded by a newer request
+        if (!trimmed) {
+          const sum = years.reduce((n, y) => n + folderCount(y), 0);
+          const slice = await browsePage(start, end);
+          if (stale()) return;
+          setRows(slice);
+          setTotal(sum);
+          setMatchYears(null);
+          setMatchMonths(null);
+          setStatus('ready');
+          if (end < sum) browsePage(end, end + PAGE_SIZE).catch(() => {}); // warm the next page in the background
+          return;
+        }
 
-        const slice = response.results.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-        const docs = await Promise.all(slice.map(async (r) => ({ id: r.id, doc: await r.data() })));
-        if (cancelled || id !== requestId.current) return;
+        /* search mode – Pagefind is loaded on first use; results are kept so paging does not re-run the search */
+        const filters: Record<string, string> = {};
+        if (folder.year) filters.year = String(folder.year);
+        if (folder.month) filters.month = folder.month;
+        if (type !== 'All') filters.type = type;
+        const options: PagefindOptions = { filters };
+        if (effectiveSort !== 'relevance') options.sort = { created: effectiveSort === 'oldest' ? 'asc' : 'desc' };
+
+        const key = JSON.stringify([trimmed, folder, type, effectiveSort]);
+        let cached = searchCache.current;
+        if (!cached || cached.key !== key) {
+          const pf = await loadPagefind();
+          const response = await pf.debouncedSearch(trimmed, options, 250);
+          if (stale() || !response) return; // superseded by a newer keystroke
+          cached = {
+            key,
+            results: response.results,
+            years: response.totalFilters?.year ?? {},
+            months: folder.year ? response.filters?.month ?? {} : {},
+          };
+          searchCache.current = cached;
+        }
+
+        const results = cached.results;
+        const docs = await Promise.all(results.slice(start, end).map(async (r) => toRow(r.id, await loadFragment(r))));
+        if (stale()) return;
 
         setRows(docs);
-        setTotal(response.results.length);
-        setMatchYears(trimmed ? response.totalFilters?.year ?? {} : null);
-        setMatchMonths(trimmed && folder.year ? response.filters?.month ?? {} : null);
+        setTotal(results.length);
+        setMatchYears(cached.years);
+        setMatchMonths(folder.year ? cached.months : null);
         setStatus('ready');
+
+        // warm the next page's fragments in the background
+        results.slice(end, end + PAGE_SIZE).forEach((r) => loadFragment(r).catch(() => {}));
       } catch (error) {
-        if (cancelled) return;
+        if (stale()) return;
         console.error(error);
         setStatus('error');
       }
@@ -162,6 +261,7 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
     return () => {
       cancelled = true;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hydrated, trimmed, folder.year, folder.month, type, effectiveSort, page, reload]);
 
   /* ── "/" focuses the search box ── */
@@ -302,6 +402,7 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
               onChange={(e) => { setQuery(e.target.value); setPage(1); }}
               placeholder={scoped ? `Search in ${scopeLabel}…` : 'Search title, author or content…'}
               aria-label="Search documents"
+              onFocus={() => void loadPagefind().catch(() => {})}
               autoComplete="off"
               spellCheck={false}
             />
@@ -315,7 +416,7 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
           </div>
 
           <label className="dx-sort">
-            {/* <span>Sort</span> */}
+            <span>Sort</span>
             <select value={sort} onChange={(e) => { setSort(e.target.value as SortMode); setPage(1); }}>
               <option value="relevance">{trimmed ? 'Best match' : 'Newest first (default)'}</option>
               <option value="newest">Newest first</option>
@@ -362,7 +463,7 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
             <div className="empty-state error-state">
               <p>The search index could not be loaded.</p>
               <p style={{ marginTop: 6, fontSize: '0.82rem' }}>Please refresh the page or try again in a moment.</p>
-              <button className="page-btn" onClick={() => setReload((n) => n + 1)} style={{ marginTop: 14 }}>Retry</button>
+              <button className="page-btn" onClick={() => { searchCache.current = null; setReload((n) => n + 1); }} style={{ marginTop: 14 }}>Retry</button>
             </div>
           ) : status === 'loading' && rows.length === 0 ? (
             <div className="records-skeleton" aria-hidden="true">
@@ -386,8 +487,7 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
             </div>
           ) : (
             <ol className="dx-list">
-              {rows.map(({ id, doc }) => {
-                const m = doc.meta;
+              {rows.map(({ id, meta: m, excerpt }) => {
                 const file = m.file;
                 return (
                   <li key={id} className="dx-card">
@@ -404,8 +504,8 @@ export function DocumentsExplorer({ tree }: { tree: FolderTree }) {
                         <a href={file} target="_blank" rel="noopener noreferrer">{m.title}</a>
                       </h3>
                       {m.author && <p className="dx-card-author"><Icon name="user" /> {m.author}</p>}
-                      {trimmed && doc.excerpt && (
-                        <p className="dx-excerpt" dangerouslySetInnerHTML={{ __html: safeExcerpt(doc.excerpt) }} />
+                      {trimmed && excerpt && (
+                        <p className="dx-excerpt" dangerouslySetInnerHTML={{ __html: safeExcerpt(excerpt) }} />
                       )}
                     </div>
                     <a className="dx-open" href={file} target="_blank" rel="noopener noreferrer" aria-label={`Open ${m.title}`}>

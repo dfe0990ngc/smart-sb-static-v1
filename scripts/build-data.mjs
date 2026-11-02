@@ -48,6 +48,18 @@ const tree = {
     .map((y) => ({ ...y, months: [...y.months.values()].sort((a, b) => b.number - a.number) })),
 };
 writeJson('documents-tree.json', tree);
+
+/* ── lightweight per-year record lists (metadata only, no OCR text) – used for instant browsing ── */
+const docsDir = path.join(DATA_DIR, 'docs');
+fs.rmSync(docsDir, { recursive: true, force: true });
+fs.mkdirSync(docsDir, { recursive: true });
+for (const y of years.keys()) {
+  const list = docs
+    .filter((d) => d.year === y)
+    .sort((a, b) => (a.created < b.created ? 1 : a.created > b.created ? -1 : b.id - a.id)) // newest first
+    .map((d) => ({ id: d.id, title: d.title, author: d.author || '', created: d.created, month: d.month, type: d.document_type, url: d.url }));
+  fs.writeFileSync(path.join(docsDir, `${y}.json`), JSON.stringify(list));
+}
 console.log(`[data] documents-tree.json  ${docs.length} documents, ${tree.years.length} year folders${isSample ? ' (SAMPLE)' : ''}`);
 
 /* ── manifest ── */

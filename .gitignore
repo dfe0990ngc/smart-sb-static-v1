@@ -2,6 +2,7 @@ node_modules
 .next
 out
 public/pagefind
+public/data/docs
 .env*
 !.env.example
 tools/.env
