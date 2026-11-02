@@ -87,9 +87,9 @@ export default function HomePage() {
               services for everyone.
             </p>
             <div className="hero-actions">
-              <a className="primary-action" href={managementPortalUrl} target="_blank" rel="noreferrer">
+              {/* <a className="primary-action" href={managementPortalUrl} target="_blank" rel="noreferrer">
                 Management Portal ↪
-              </a>
+              </a> */}
               <Link className="secondary-action" href="/documents/">
                 Browse Legislations 🗁
               </Link>
@@ -226,7 +226,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-call-to-action-bg section-padding">
+      {/* <section className="section-call-to-action-bg section-padding">
         <div className="container section-heading split-heading">
           <article className="feature-card-footer">
             <span>
@@ -239,7 +239,7 @@ export default function HomePage() {
             Management Portal ↪
           </a>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { MANAGEMENT_PORTAL_URL } from '../lib/config';
+// import { MANAGEMENT_PORTAL_URL } from '../lib/config';
 
 const navigation = [
   { href: '/', label: 'Home' },
@@ -62,9 +62,9 @@ export function Navbar() {
             ))}
           </div>
 
-          <a className="portal-button" href={MANAGEMENT_PORTAL_URL} target="_blank" rel="noreferrer">
+          {/* <a className="portal-button" href={MANAGEMENT_PORTAL_URL} target="_blank" rel="noreferrer">
             ↪ Management Portal
-          </a>
+          </a> */}
 
           <button
             className={`nav-toggle${open ? ' open' : ''}`}
@@ -88,10 +88,10 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <div className="drawer-divider" style={{ marginTop: 4 }} />
+          {/* <div className="drawer-divider" style={{ marginTop: 4 }} />
           <a className="drawer-portal-btn" href={MANAGEMENT_PORTAL_URL} target="_blank" rel="noreferrer">
             ↪ Management Portal
-          </a>
+          </a> */}
         </nav>
       </div>
     </>
