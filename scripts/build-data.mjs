@@ -3,8 +3,9 @@
  *  1. content/documents.json  -> public/data/documents-tree.json   (year/month folder counts)
  *  2. refreshes public/data/manifest.json:
  *       stats.ordinances / stats.resolutions   (counted from the documents export)
+ *       stats.sessions_conducted               (number of distinct `created` dates in the export)
  *       latest_updates                         (top 3 of public/data/news.json)
- *     stats.sessions_conducted (and optional stats.active_committees) are yours to edit.
+ *     stats.active_committees (optional) is yours to edit.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -57,6 +58,8 @@ if (!isSample) {
   const countLike = (re) => Object.entries(typeTotals).filter(([k]) => re.test(k)).reduce((n, [, v]) => n + v, 0);
   manifest.stats.ordinances = countLike(/ordinance/i);
   manifest.stats.resolutions = countLike(/resolution/i);
+  // one session per distinct `created` date in the Paperless export
+  manifest.stats.sessions_conducted = new Set(docs.map((d) => d.created)).size;
 }
 
 const news = readJson('news.json', { items: [] }).items || [];

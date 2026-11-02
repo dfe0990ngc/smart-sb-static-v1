@@ -41,8 +41,8 @@ python tools/paperless_to_r2.py            # uploads only keys that do not exist
 
 `public/data/*.json` already contain sample content — replace with yours.
 
-**manifest.json** (homepage). `ordinances`, `resolutions` and `latest_updates` are refreshed on every build
-(counts from the documents export, latest 3 from `news.json`); you maintain `sessions_conducted`.
+**manifest.json** (homepage). `ordinances`, `resolutions`, `sessions_conducted` and `latest_updates` are refreshed on every build
+(counts from the documents export; `sessions_conducted` = number of distinct `created` dates; latest 3 from `news.json`).
 ```json
 {
   "generated_at": "2026-11-02T00:00:00Z",
@@ -93,9 +93,10 @@ npm run preview    # wrangler pages dev out
 npm run deploy     # build + wrangler pages deploy out --project-name smart-sb
 ```
 
-Recommended: build where Paperless is reachable and use **direct upload** (`npm run deploy`, run `npx wrangler login` once).
-If you use Cloudflare’s Git integration instead, commit `content/documents.json` (remove it from `.gitignore`);
-build command `npm run build`, output directory `out`, Node 20+.
+**Cloudflare (GitHub-connected Workers Builds)** — Project name `smart-sb-static-v1`, build command `npm run build`,
+deploy command `npx wrangler deploy`, preview command `npx wrangler versions upload`. `wrangler.toml` serves `out/` as static assets.
+Cloudflare cannot reach your Paperless, so run `paperless_export.py` locally and **commit `content/documents.json`**
+(plus changed JSON/images), then push — each push rebuilds the Pagefind index and redeploys.
 
 Optional env (Pages → Settings → Environment variables, or `.env.local`): `NEXT_PUBLIC_MANAGEMENT_PORTAL_URL`.
 
