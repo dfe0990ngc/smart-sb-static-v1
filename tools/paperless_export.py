@@ -27,6 +27,7 @@ import requests
 from common import MONTHS, env, file_extension, r2_key
 
 PAGE_SIZE = 100
+DEFAULT_TYPE_KEYWORDS = "ordinance,resolution"
 FIELDS = ",".join(
     [
         "id", "title", "content", "created", "created_date", "document_type",
@@ -95,7 +96,12 @@ def normalize_text(text: str) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--out", default="content/documents.json")
-    ap.add_argument("--types", default=env("PUBLIC_DOCUMENT_TYPES"), help="comma separated document type names; empty = all")
+    ap.add_argument(
+        "--types",
+        default=env("PUBLIC_DOCUMENT_TYPES") or DEFAULT_TYPE_KEYWORDS,
+        help="comma separated keywords; a document type is exported if its name CONTAINS any of them "
+        f"(case-insensitive). Default: {DEFAULT_TYPE_KEYWORDS}",
+    )
     ap.add_argument("--author-field", default=env("PAPERLESS_AUTHOR_FIELD", "document_author"))
     ap.add_argument("--max-content", type=int, default=0, help="truncate OCR text to N characters (0 = no limit)")
     args = ap.parse_args()
@@ -108,20 +114,20 @@ def main() -> None:
 
     doc_types = {t["id"]: t["name"] for t in pl.paged("/api/document_types/")}
     params: dict = {"fields": FIELDS, "ordering": "-created"}
-    wanted_types = [t.strip() for t in args.types.split(",") if t.strip()]
-    if wanted_types:
-        lookup = {name.lower(): tid for tid, name in doc_types.items()}
-        ids = []
-        for name in wanted_types:
-            if name.lower() not in lookup:
-                print(f"! document type '{name}' does not exist in Paperless (available: {', '.join(doc_types.values())})", file=sys.stderr)
-            else:
-                ids.append(str(lookup[name.lower()]))
-        if not ids:
-            sys.exit("None of the requested document types exist - nothing to export.")
-        params["document_type__id__in"] = ",".join(ids)
+    keywords = [k.strip().lower() for k in args.types.split(",") if k.strip()]
+    ids = [
+        str(tid) for tid, name in doc_types.items()
+        if any(k in name.lower() for k in keywords)
+    ]
+    if not ids:
+        sys.exit(
+            f"No Paperless document type name contains any of {keywords} "
+            f"(available: {', '.join(doc_types.values())}) - nothing to export."
+        )
+    params["document_type__id__in"] = ",".join(ids)
+    print("Exporting document types: " + ", ".join(doc_types[int(i)] for i in ids), file=sys.stderr)
 
-    docs, skipped = [], 0
+    docs, skipped, skipped_type = [], 0, 0
     for raw in pl.paged("/api/documents/", **params):
         created = (raw.get("created_date") or raw.get("created") or "")[:10]
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", created):
@@ -138,6 +144,11 @@ def main() -> None:
         if args.max_content and len(content) > args.max_content:
             content = content[: args.max_content]
 
+        doc_type = doc_types.get(raw.get("document_type")) or ""
+        if not any(k in doc_type.lower() for k in keywords):
+            skipped_type += 1
+            continue
+
         month_number = int(created[5:7])
         key = r2_key(raw["id"], created, file_extension(raw))
         docs.append(
@@ -150,7 +161,7 @@ def main() -> None:
                 "year": int(created[:4]),
                 "month": MONTHS[month_number - 1],
                 "month_number": month_number,
-                "document_type": doc_types.get(raw.get("document_type")),
+                "document_type": doc_type,
                 "file_key": key,
                 "url": f"{public_base}/{key}",
             }
@@ -167,7 +178,7 @@ def main() -> None:
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
 
     with_author = sum(1 for d in docs if d["author"])
-    print(f"Exported {len(docs)} documents -> {out}  ({with_author} with author, {skipped} skipped: no valid created date)")
+    print(f"Exported {len(docs)} documents -> {out}  ({with_author} with author, {skipped} skipped: no valid created date, {skipped_type} skipped: document_type not matching {keywords})")
     if not docs:
         print("! No documents exported - check PUBLIC_DOCUMENT_TYPES / token permissions.", file=sys.stderr)
 
