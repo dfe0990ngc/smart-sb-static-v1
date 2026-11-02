@@ -7,7 +7,9 @@ export const DATA_DIR = path.join(ROOT, 'public', 'data');
 
 export const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-const ORDINANCE_PATTERN = /\b(?:municipal|appropriation)\s+ordinance\s+no\.?/i;
+// const ORDINANCE_PATTERN = /\b(?:municipal|appropriation)\s+ordinance\s+no\.?/i;
+
+const ORDINANCE_PATTERN = /^[ \t]*(?:municipal|appropriation)\s+ordinance\s+no\.?/im;
 
 /** Loads content/documents.json (real export) or falls back to content/documents.sample.json */
 export function loadDocuments() {
