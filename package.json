@@ -1,0 +1,27 @@
+{
+  "name": "smart-sb-public-portal",
+  "version": "2.0.0",
+  "private": true,
+  "description": "SMART-SB public portal - static export for Cloudflare Pages",
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "search:index": "node scripts/build-search-index.mjs out/pagefind",
+    "dev": "node scripts/build-data.mjs && node scripts/build-search-index.mjs public/pagefind && next dev -H 0.0.0.0",
+    "prebuild": "node -e \"require('fs').rmSync('public/pagefind',{recursive:true,force:true})\"",
+    "build": "node scripts/build-data.mjs && next build && node scripts/build-search-index.mjs out/pagefind",
+    "preview": "npx wrangler pages dev out",
+    "deploy": "npm run build && npx wrangler pages deploy out --project-name smart-sb"
+  },
+  "dependencies": {
+    "next": "^15.5.28",
+    "react": "^19.2.9",
+    "react-dom": "^19.2.9"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "pagefind": "^1.3.0",
+    "typescript": "5.7.3"
+  }
+}

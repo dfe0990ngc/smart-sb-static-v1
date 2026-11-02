@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-11-02T01:57:09.075Z",
+  "total": 10,
+  "types": [
+    "Ordinance",
+    "Resolution"
+  ],
+  "years": [
+    {
+      "year": 2026,
+      "count": 3,
+      "types": {
+        "Ordinance": 2,
+        "Resolution": 1
+      },
+      "months": [
+        {
+          "month": "March",
+          "number": 3,
+          "count": 2,
+          "types": {
+            "Ordinance": 1,
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "January",
+          "number": 1,
+          "count": 1,
+          "types": {
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "count": 4,
+      "types": {
+        "Resolution": 2,
+        "Ordinance": 2
+      },
+      "months": [
+        {
+          "month": "November",
+          "number": 11,
+          "count": 2,
+          "types": {
+            "Resolution": 1,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "June",
+          "number": 6,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        },
+        {
+          "month": "February",
+          "number": 2,
+          "count": 1,
+          "types": {
+            "Ordinance": 1
+          }
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "count": 3,
+      "types": {
+        "Resolution": 2,
+        "Ordinance": 1
+      },
+      "months": [
+        {
+          "month": "September",
+          "number": 9,
+          "count": 2,
+          "types": {
+            "Resolution": 1,
+            "Ordinance": 1
+          }
+        },
+        {
+          "month": "April",
+          "number": 4,
+          "count": 1,
+          "types": {
+            "Resolution": 1
+          }
+        }
+      ]
+    }
+  ]
+}

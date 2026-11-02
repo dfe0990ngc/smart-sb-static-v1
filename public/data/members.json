@@ -1,0 +1,74 @@
+{
+  "updated_at": "2026-11-02",
+  "group_photo": "/images/sb-group.webp",
+  "secretariat_group_photo": "/images/secretariat-group.webp",
+  "members": [
+    {
+      "name": "Hon. Marissa V. Aquino",
+      "position": "Municipal Vice Mayor / Presiding Officer",
+      "photo": "/images/profiles/member-1.svg",
+      "sort": 1,
+      "featured": true
+    },
+    {
+      "name": "Hon. Daniel R. Reyes",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-1.svg",
+      "sort": 10
+    },
+    {
+      "name": "Hon. Elena M. Cruz",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-2.svg",
+      "sort": 20
+    },
+    {
+      "name": "Hon. Paolo S. Rivera",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-3.svg",
+      "sort": 30
+    },
+    {
+      "name": "Hon. Josefina L. Tan",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-4.svg",
+      "sort": 40
+    },
+    {
+      "name": "Hon. Ramon B. Dela Cruz",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-5.svg",
+      "sort": 50
+    },
+    {
+      "name": "Hon. Teresita G. Lim",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-6.svg",
+      "sort": 60
+    },
+    {
+      "name": "Hon. Alfredo C. Mendoza",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-7.svg",
+      "sort": 70
+    },
+    {
+      "name": "Hon. Corazon P. Villanueva",
+      "position": "Municipal Councilor",
+      "photo": "/images/profiles/member-8.svg",
+      "sort": 80
+    },
+    {
+      "name": "Hon. Paolo S. Rivera Jr.",
+      "position": "Liga ng mga Barangay President",
+      "photo": "/images/profiles/exofficio-1.svg",
+      "sort": 100
+    },
+    {
+      "name": "Hon. Anna Marie Dizon",
+      "position": "SK Federation President",
+      "photo": "/images/profiles/exofficio-2.svg",
+      "sort": 110
+    }
+  ]
+}

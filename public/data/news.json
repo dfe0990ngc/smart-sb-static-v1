@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-11-02T00:00:00Z",
+  "items": [
+    {
+      "id": 1,
+      "slug": "public-portal-launch-for-smart-sb-records",
+      "title": "Public Portal Launch for SMART-SB Records",
+      "excerpt": "The Sangguniang Bayan of Sta. Cruz shares the latest public update for citizens.",
+      "category": "Announcement",
+      "cover_photo": "/images/sample-updates-image.png",
+      "date_published": "2026-10-28T08:00:00+08:00",
+      "content": "<p>This is sample content. Replace it with your own announcement body (basic HTML is supported).</p><p>Visit the <a href=\"/documents/\">legislative documents</a> page to browse records.</p>"
+    },
+    {
+      "id": 2,
+      "slug": "regular-session-schedule-for-november",
+      "title": "Regular Session Schedule for November",
+      "excerpt": "The Sangguniang Bayan of Sta. Cruz shares the latest public update for citizens.",
+      "category": "Session",
+      "cover_photo": "/images/update-records.svg",
+      "date_published": "2026-10-23T08:00:00+08:00",
+      "content": "<p>This is sample content. Replace it with your own announcement body (basic HTML is supported).</p><p>Visit the <a href=\"/documents/\">legislative documents</a> page to browse records.</p>"
+    },
+    {
+      "id": 3,
+      "slug": "public-hearing-on-the-proposed-solid-waste-ordinance",
+      "title": "Public Hearing on the Proposed Solid Waste Ordinance",
+      "excerpt": "The Sangguniang Bayan of Sta. Cruz shares the latest public update for citizens.",
+      "category": "Event",
+      "cover_photo": "/images/sample-updates-image.png",
+      "date_published": "2026-10-18T08:00:00+08:00",
+      "content": "<p>This is sample content. Replace it with your own announcement body (basic HTML is supported).</p><p>Visit the <a href=\"/documents/\">legislative documents</a> page to browse records.</p>"
+    },
+    {
+      "id": 4,
+      "slug": "secretariat-opens-records-assistance-desk",
+      "title": "Secretariat Opens Records Assistance Desk",
+      "excerpt": "The Sangguniang Bayan of Sta. Cruz shares the latest public update for citizens.",
+      "category": "Advisory",
+      "cover_photo": "/images/update-records.svg",
+      "date_published": "2026-10-13T08:00:00+08:00",
+      "content": "<p>This is sample content. Replace it with your own announcement body (basic HTML is supported).</p><p>Visit the <a href=\"/documents/\">legislative documents</a> page to browse records.</p>"
+    }
+  ]
+}

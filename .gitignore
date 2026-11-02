@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+public/pagefind
+content/documents.json
+.env*
+!.env.example
+tools/.env
+tools/__pycache__
+.wrangler
