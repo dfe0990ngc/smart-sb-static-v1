@@ -9,8 +9,8 @@
     "dev": "node scripts/build-data.mjs && node scripts/build-search-index.mjs public/pagefind && next dev -H 0.0.0.0",
     "prebuild": "node -e \"require('fs').rmSync('public/pagefind',{recursive:true,force:true})\"",
     "build": "node scripts/build-data.mjs && next build && node scripts/build-search-index.mjs out/pagefind",
-    "preview": "npx wrangler pages dev out",
-    "deploy": "npm run build && npx wrangler pages deploy out --project-name smart-sb"
+    "preview": "npx wrangler dev",
+    "deploy": "npm run build && npx wrangler deploy"
   },
   "dependencies": {
     "next": "^15.5.28",

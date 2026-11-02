@@ -1,3 +1,6 @@
-name = "smart-sb"
-pages_build_output_dir = "out"
+name = "smart-sb-static-v1"          # must match the Project name in Cloudflare
 compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./out"
+not_found_handling = "404-page"      # serves out/404.html
