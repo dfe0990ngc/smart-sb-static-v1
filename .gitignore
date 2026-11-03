@@ -8,3 +8,4 @@ public/data/docs
 tools/.env
 tools/__pycache__
 .wrangler
+tools/content
