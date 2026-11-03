@@ -9,7 +9,7 @@ export const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', '
 
 // const ORDINANCE_PATTERN = /\b(?:municipal|appropriation)\s+ordinance\s+no\.?/i;
 
-const ORDINANCE_PATTERN = /^[ \t]*(?:municipal|appropriation)\s+ordinance\s+no\.?/im;
+const ORDINANCE_PATTERN = /^[ \t]*\\*{0,2}#?[ \t]*\\*{0,2}(?:municipal|appropriation)\s+ordinance\s+no\.?\s+\d+\\*{0,2}[ \t]*$/im;
 
 /** Loads content/documents.json (real export) or falls back to content/documents.sample.json */
 export function loadDocuments() {
