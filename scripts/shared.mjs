@@ -7,7 +7,7 @@ export const DATA_DIR = path.join(ROOT, 'public', 'data');
 
 export const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-const ORDINANCE_PATTERN = /\b(?:municipal|appropriation)\s+ordinance\s+no\.?/i;
+// const ORDINANCE_PATTERN = /\b(?:municipal|appropriation)\s+ordinance\s+no\.?/i;
 
 // const ORDINANCE_PATTERN = /^[ \t]*\\*{0,2}#?[ \t]*\\*{0,2}(?:municipal|appropriation)\s+ordinance\s+no\.?\s+\d+\\*{0,2}[ \t]*$/im;
 
@@ -37,9 +37,7 @@ export function loadDocuments() {
       year,
       month_number: monthNumber,
       month: MONTHS[monthNumber - 1],
-      document_type: d.document_type === 'Resolution' && ORDINANCE_PATTERN.test(content)
-        ? 'Ordinance'
-        : d.document_type || 'Other',
+      document_type: d.document_type || 'Other',
       author: d.author || '',
       content,
     });
