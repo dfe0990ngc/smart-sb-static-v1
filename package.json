@@ -8,7 +8,7 @@
     "search:index": "node scripts/build-search-index.mjs out/pagefind",
     "dev": "node scripts/build-data.mjs && node scripts/build-search-index.mjs public/pagefind && next dev -H 0.0.0.0",
     "prebuild": "node -e \"require('fs').rmSync('public/pagefind',{recursive:true,force:true})\"",
-    "build": "node scripts/build-data.mjs && next build && node scripts/build-search-index.mjs out/pagefind",
+    "build": "node scripts/build-data.mjs && next build && node scripts/build-search-index.mjs out/pagefind && node scripts/build-seo.mjs",
     "preview": "npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy"
   },

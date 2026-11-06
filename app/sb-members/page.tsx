@@ -4,7 +4,11 @@ import { PersonCard } from '../../components/PersonCard';
 import SiteImage from '../../components/SiteImage';
 import { getMembers } from '../../lib/data';
 
-export const metadata: Metadata = { title: 'Sangguniang Bayan Members' };
+export const metadata: Metadata = {
+  title: 'Sangguniang Bayan Members',
+  description: 'Meet the Vice Mayor, councilors and secretariat of the Sangguniang Bayan of Sta. Cruz, Davao del Sur.',
+  alternates: { canonical: '/sb-members/' },
+};
 
 export default function SBMembersPage() {
   const { featured, regular, groupPhoto, secretariatPhoto } = getMembers();

@@ -3,7 +3,11 @@ import { PageHero } from '../../components/PageHero';
 import { UpdateCard } from '../../components/UpdateCard';
 import { getNews } from '../../lib/data';
 
-export const metadata: Metadata = { title: 'News & Updates' };
+export const metadata: Metadata = {
+  title: 'News & Updates',
+  description: 'Announcements, events and legislative updates from the Sangguniang Bayan of Sta. Cruz, Davao del Sur.',
+  alternates: { canonical: '/latest-updates/' },
+};
 
 export default function LatestUpdatesPage() {
   const updates = getNews(12);

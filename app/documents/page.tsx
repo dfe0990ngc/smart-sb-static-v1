@@ -3,7 +3,11 @@ import { DocumentsExplorer } from '../../components/DocumentsExplorer';
 import { PageHero } from '../../components/PageHero';
 import { getFolderTree } from '../../lib/data';
 
-export const metadata: Metadata = { title: 'Legislative Documents' };
+export const metadata: Metadata = {
+  title: 'Legislative Documents — Ordinances & Resolutions',
+  description: 'Browse and search the ordinances and resolutions of the Sangguniang Bayan of Sta. Cruz, Davao del Sur by year and month.',
+  alternates: { canonical: '/documents/' },
+};
 
 export default function DocumentsPage() {
   const tree = getFolderTree();

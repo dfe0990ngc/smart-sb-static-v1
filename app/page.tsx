@@ -1,10 +1,30 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { UpdateCard } from '../components/UpdateCard';
-import { MANAGEMENT_PORTAL_URL } from '../lib/config';
+import { MANAGEMENT_PORTAL_URL, SITE_URL } from '../lib/config';
 import { getManifest } from '../lib/data';
 
-export const metadata: Metadata = { title: 'SMART SB — Sangguniang Bayan of Sta. Cruz' };
+export const metadata: Metadata = {
+  title: { absolute: 'SMART-SB — Sangguniang Bayan of Sta. Cruz, Davao del Sur' },
+  description:
+    'Official public portal of the Sangguniang Bayan of Sta. Cruz, Davao del Sur: search ordinances and resolutions, meet the members, and read the latest updates.',
+  alternates: { canonical: '/' },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'GovernmentOrganization',
+      name: 'Sangguniang Bayan of Sta. Cruz, Davao del Sur',
+      alternateName: 'SMART-SB',
+      url: SITE_URL || undefined,
+      logo: SITE_URL ? `${SITE_URL}/images/logo.png` : undefined,
+      address: { '@type': 'PostalAddress', addressLocality: 'Sta. Cruz', addressRegion: 'Davao del Sur', addressCountry: 'PH' },
+    },
+    { '@type': 'WebSite', name: 'SMART-SB Public Portal', url: SITE_URL || undefined, inLanguage: 'en-PH' },
+  ],
+};
 
 const primaryFeatures = [
   {
@@ -74,6 +94,7 @@ export default function HomePage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="hero-section">
         <div className="hero-section-overlay" aria-hidden="true" />
         <div className="container">
