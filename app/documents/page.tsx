@@ -22,6 +22,11 @@ export default function DocumentsPage() {
       <section className="section-padding">
         <div className="container">
           <DocumentsExplorer tree={tree} />
+          {process.env.SEO_DOC_PAGES === 'true' && (
+            <p style={{ marginTop: 18, textAlign: 'center', fontSize: '0.9rem' }}>
+              <a className="text-link" href="/documents/archive/">Browse the plain archive of documents by year and month →</a>
+            </p>
+          )}
         </div>
       </section>
     </>

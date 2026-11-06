@@ -8,11 +8,12 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { MONTHS, ROOT, DATA_DIR, docPath, getSiteUrl, loadDocuments } from './shared.mjs';
+import { MONTHS, ROOT, DATA_DIR, SEO_MIN_YEAR, docPath, getSiteUrl, hasPage, loadDocuments } from './shared.mjs';
 
 const OUT = path.join(ROOT, 'out');
 const site = getSiteUrl();
-const { docs, isSample } = loadDocuments();
+const { docs: allDocs, isSample } = loadDocuments();
+const docs = allDocs.filter(hasPage); // only SEO_MIN_YEAR (default 2012) and later get their own page
 const today = new Date().toISOString().slice(0, 10);
 
 if (!fs.existsSync(path.join(OUT, 'index.html'))) {
@@ -94,8 +95,8 @@ const crumbs = (items) =>
 const urls = []; // [path, lastmod]
 const MAX_TEXT = 30000;
 
-if (!isSample) {
-  /* ── one page per document ── */
+if (!isSample && docs.length > 0) {
+  /* ── one page per document (only when SEO_DOC_PAGES=true) ── */
   for (const d of docs) {
     const p = docPath(d);
     const monthPath = `/documents/archive/${d.year}/${String(d.month_number).padStart(2, '0')}/`;
@@ -211,4 +212,6 @@ if (site) {
   robots += `\nSitemap: ${site}/sitemap.xml\n`;
 }
 write('robots.txt', robots);
-console.log(`[seo] ${isSample ? 0 : docs.length} document pages, ${all.length} sitemap URLs${site ? '' : ' (sitemap skipped)'}`);
+const countFiles = (dir) => fs.readdirSync(dir, { withFileTypes: true }).reduce((n, e) => n + (e.isDirectory() ? countFiles(path.join(dir, e.name)) : 1), 0);
+console.log(`[seo] documents from ${SEO_MIN_YEAR} (SEO_DOC_PAGES=${process.env.SEO_DOC_PAGES === 'true'}): ${isSample ? 0 : docs.length} pages (${allDocs.length - docs.length} older documents skipped), total files in out/: ${countFiles(OUT)} (free plan limit 20,000)`);
+console.log(`[seo] ${all.length} sitemap URLs${site ? '' : ' (sitemap skipped)'}`);
