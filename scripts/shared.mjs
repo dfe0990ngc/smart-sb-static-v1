@@ -71,5 +71,5 @@ export function getSiteUrl() {
 }
 
 /** Only documents from this year onward get their own crawlable page (keeps the deploy under the file limit). */
-export const SEO_MIN_YEAR = Number(process.env.SEO_MIN_YEAR) || 2022;
+export const SEO_MIN_YEAR = Number(process.env.SEO_MIN_YEAR) || 2025;
 export const hasPage = (d) => d.year >= SEO_MIN_YEAR;
