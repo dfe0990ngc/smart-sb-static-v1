@@ -7,10 +7,6 @@ export const DATA_DIR = path.join(ROOT, 'public', 'data');
 
 export const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-// const ORDINANCE_PATTERN = /\b(?:municipal|appropriation)\s+ordinance\s+no\.?/i;
-
-// const ORDINANCE_PATTERN = /^[ \t]*\\*{0,2}#?[ \t]*\\*{0,2}(?:municipal|appropriation)\s+ordinance\s+no\.?\s+\d+\\*{0,2}[ \t]*$/im;
-
 /** Loads content/documents.json (real export) or falls back to content/documents.sample.json */
 export function loadDocuments() {
   const real = path.join(CONTENT_DIR, 'documents.json');
@@ -30,7 +26,6 @@ export function loadDocuments() {
     }
     const year = Number(m[1]);
     const monthNumber = Number(m[2]);
-    const content = d.content || '';
     docs.push({
       ...d,
       created: `${m[1]}-${m[2]}-${m[3]}`,
@@ -39,7 +34,7 @@ export function loadDocuments() {
       month: MONTHS[monthNumber - 1],
       document_type: d.document_type || 'Other',
       author: d.author || '',
-      content,
+      content: d.content || '',
     });
   }
   return { docs, isSample };
@@ -74,3 +69,7 @@ export function getSiteUrl() {
   url = url.trim().replace(/\/+$/, '');
   return /^https?:\/\/[^/]+\.[^/]+/i.test(url) && !/change-me/i.test(url) ? url : '';
 }
+
+/** Only documents from this year onward get their own crawlable page (keeps the deploy under the file limit). */
+export const SEO_MIN_YEAR = Number(process.env.SEO_MIN_YEAR) || 2022;
+export const hasPage = (d) => d.year >= SEO_MIN_YEAR;

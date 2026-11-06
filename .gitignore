@@ -3,7 +3,7 @@ node_modules
 out
 public/pagefind
 public/data/docs
-.env*
+.env
 !.env.example
 tools/.env
 tools/__pycache__
