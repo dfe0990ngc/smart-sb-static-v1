@@ -44,3 +44,33 @@ export function loadDocuments() {
   }
   return { docs, isSample };
 }
+
+/* ───────── SEO helpers ───────── */
+export function slugify(text) {
+  return String(text || '')
+    .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase().replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+    .slice(0, 80).replace(/-+$/, '');
+}
+
+/** Crawlable page of a document, e.g. /documents/1042-ordinance-no-003-26-solid-waste/ */
+export function docPath(d) {
+  const slug = slugify(d.title);
+  return `/documents/${d.id}${slug ? '-' + slug : ''}/`;
+}
+
+/** Absolute site URL (no trailing slash) from NEXT_PUBLIC_SITE_URL or .env.production; '' when not configured. */
+export function getSiteUrl() {
+  let url = process.env.NEXT_PUBLIC_SITE_URL || '';
+  if (!url) {
+    for (const f of ['.env.production.local', '.env.production', '.env.local', '.env']) {
+      const file = path.join(ROOT, f);
+      if (!fs.existsSync(file)) continue;
+      const m = /^\s*NEXT_PUBLIC_SITE_URL\s*=\s*["']?([^"'\s#]+)/m.exec(fs.readFileSync(file, 'utf-8'));
+      if (m) { url = m[1]; break; }
+    }
+  }
+  url = url.trim().replace(/\/+$/, '');
+  return /^https?:\/\/[^/]+\.[^/]+/i.test(url) && !/change-me/i.test(url) ? url : '';
+}
