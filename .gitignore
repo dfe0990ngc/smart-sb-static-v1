@@ -9,3 +9,6 @@ tools/.env
 tools/__pycache__
 .wrangler
 tools/content
+tools/secrets.bat
+tools/document-ai.bat
+tools/paperless_ai_agent.py
