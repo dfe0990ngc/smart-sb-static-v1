@@ -27,11 +27,12 @@ import requests
 from common import MONTHS, env, file_extension, r2_key
 
 PAGE_SIZE = 100
+DEFAULT_EXCLUDE_TAG_IDS = "138"
 DEFAULT_TYPE_KEYWORDS = "ordinance,resolution"
 FIELDS = ",".join(
     [
         "id", "title", "content", "created", "created_date", "document_type",
-        "custom_fields", "original_file_name", "archived_file_name",
+        "custom_fields", "original_file_name", "archived_file_name", "tags",
     ]
 )
 
@@ -102,6 +103,11 @@ def main() -> None:
         help="comma separated keywords; a document type is exported if its name CONTAINS any of them "
         f"(case-insensitive). Default: {DEFAULT_TYPE_KEYWORDS}",
     )
+    ap.add_argument(
+        "--exclude-tags",
+        default=env("EXCLUDE_TAG_IDS") or DEFAULT_EXCLUDE_TAG_IDS,
+        help=f"comma separated Paperless tag ids; documents carrying any of them are NOT exported. Default: {DEFAULT_EXCLUDE_TAG_IDS}",
+    )
     ap.add_argument("--author-field", default=env("PAPERLESS_AUTHOR_FIELD", "document_author"))
     ap.add_argument("--max-content", type=int, default=0, help="truncate OCR text to N characters (0 = no limit)")
     args = ap.parse_args()
@@ -125,10 +131,18 @@ def main() -> None:
             f"(available: {', '.join(doc_types.values())}) - nothing to export."
         )
     params["document_type__id__in"] = ",".join(ids)
+    exclude_tags = {int(t) for t in args.exclude_tags.split(",") if t.strip()}
+    if exclude_tags:
+        params["tags__id__none"] = ",".join(str(t) for t in sorted(exclude_tags))
+        print("Excluding documents with tag id(s): " + ", ".join(map(str, sorted(exclude_tags))), file=sys.stderr)
     print("Exporting document types: " + ", ".join(doc_types[int(i)] for i in ids), file=sys.stderr)
 
-    docs, skipped, skipped_type = [], 0, 0
+    docs, skipped, skipped_type, skipped_tag = [], 0, 0, 0
     for raw in pl.paged("/api/documents/", **params):
+        # safety net in case the server-side filter is ignored
+        if exclude_tags & set(raw.get("tags") or []):
+            skipped_tag += 1
+            continue
         created = (raw.get("created_date") or raw.get("created") or "")[:10]
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", created):
             skipped += 1
@@ -178,7 +192,7 @@ def main() -> None:
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
 
     with_author = sum(1 for d in docs if d["author"])
-    print(f"Exported {len(docs)} documents -> {out}  ({with_author} with author, {skipped} skipped: no valid created date, {skipped_type} skipped: document_type not matching {keywords})")
+    print(f"Exported {len(docs)} documents -> {out}  ({with_author} with author, {skipped} skipped: no valid created date, {skipped_type} skipped: document_type not matching {keywords}, {skipped_tag} skipped: excluded tag)")
     if not docs:
         print("! No documents exported - check PUBLIC_DOCUMENT_TYPES / token permissions.", file=sys.stderr)
 
